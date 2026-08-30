@@ -1,0 +1,8 @@
+{
+  "name": "Dr. Syed Anees ur Rehman Shah",
+  "description": "Editorial website and medical practice portal for Dr. Syed Anees ur Rehman Shah, Consultant Cardiac Surgeon in Lahore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

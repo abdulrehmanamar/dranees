@@ -118,51 +118,55 @@
 <body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 <!-- 1. HEADER -->
 <header class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md border-b border-outline-variant dark:border-outline">
-<div class="flex justify-between items-center w-full px-grid-gutter max-w-container-max-width mx-auto h-20">
-<a class="font-display-lg text-headline-sm text-on-surface dark:text-on-surface-variant truncate pr-4" href="/index">
+<div class="flex justify-between items-center w-full px-4 sm:px-6 lg:px-grid-gutter max-w-container-max-width mx-auto h-20">
+<a class="font-display-lg text-lg sm:text-xl lg:text-2xl xl:text-headline-sm text-on-surface dark:text-on-surface-variant font-bold tracking-tight shrink-0 pr-2 lg:pr-4" href="/">
                 Dr. Syed Anees ur Rehman Shah
             </a>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/index">Home</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/about">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/expertise">Expertise</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/procedures">Procedures</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/stories">Patient Stories</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-80 transition-all duration-300 font-body-md text-body-md" href="/media">Media Center</a>
+<nav class="hidden lg:flex gap-6 xl:gap-8 items-center">
+<a class="text-secondary font-semibold border-b-2 border-secondary pb-0.5 transition-all duration-300 font-body-md whitespace-nowrap" href="/">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md whitespace-nowrap" href="/about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md whitespace-nowrap" href="/expertise">Expertise</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md whitespace-nowrap" href="/procedures">Procedures</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md whitespace-nowrap" href="/stories">Patient Stories</a>
 </nav>
-<a class="hidden md:flex items-center gap-2 bg-on-secondary-fixed-variant text-surface px-6 py-3 rounded hover:bg-secondary transition-colors btn-hover-shift" href="/contact">
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-2 bg-on-secondary-fixed-variant text-surface px-4 py-2.5 lg:px-6 lg:py-3 rounded text-sm lg:text-base hover:bg-secondary transition-colors btn-hover-shift whitespace-nowrap font-medium" href="/contact">
                 Book a Consultation
                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
-<button class="md:hidden text-on-surface">
+<button class="lg:hidden text-on-surface p-2 focus:outline-none" aria-label="Toggle Navigation">
 <span class="material-symbols-outlined">menu</span>
 </button>
+</div>
 </div>
 </header>
 <main class="pt-20">
 <!-- 2. HERO -->
-<section class="min-h-[819px] flex items-center py-section-padding-mobile md:py-section-padding px-grid-gutter max-w-container-max-width mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter items-center">
-<div class="md:col-span-6 reveal-up active">
-<p class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase tracking-widest">Cardiac Surgeon · Lahore</p>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">
+<section class="min-h-[750px] lg:min-h-[820px] flex items-center py-12 md:py-16 lg:py-section-padding px-4 sm:px-6 lg:px-grid-gutter max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-grid-gutter items-center w-full">
+<div class="md:col-span-6 lg:col-span-6 reveal-up active">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-4 lg:mb-6 uppercase tracking-widest">Cardiac Surgeon · Lahore</p>
+<h1 class="font-display-lg text-3xl sm:text-4xl md:text-3xl lg:text-5xl xl:text-display-lg text-on-surface mb-4 lg:mb-6 leading-[1.15]">
                         Expert Cardiac Care, <br><span class="italic text-on-surface-variant">Centered Around You.</span>
 </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+<p class="font-body-lg text-base sm:text-lg lg:text-body-lg text-on-surface-variant mb-8 lg:mb-10 max-w-lg">
                         Providing world-class cardiovascular surgical interventions with a focus on precision, compassion, and individualized patient outcomes in a state-of-the-art environment.
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
-<a class="flex items-center justify-center gap-2 bg-on-secondary-fixed-variant text-surface px-8 py-4 rounded hover:bg-secondary transition-colors btn-hover-shift" href="/contact">
+<a class="flex items-center justify-center gap-2 bg-on-secondary-fixed-variant text-surface px-6 sm:px-8 py-3.5 sm:py-4 rounded hover:bg-secondary transition-colors btn-hover-shift font-medium" href="/contact">
                             Book a Consultation
-                            <span class="material-symbols-outlined">arrow_forward</span>
+                            <span class="material-symbols-outlined text-sm sm:text-base">arrow_forward</span>
 </a>
-<a class="flex items-center justify-center gap-2 border border-outline px-8 py-4 rounded hover:bg-surface-variant transition-colors" href="/expertise">
+<a class="flex items-center justify-center gap-2 border border-outline px-6 sm:px-8 py-3.5 sm:py-4 rounded hover:bg-surface-variant transition-colors font-medium" href="/expertise">
                             Explore Expertise
                         </a>
 </div>
 </div>
-<div class="md:col-span-6 relative h-[500px] md:h-[700px] reveal-up active" style="transition-delay: 200ms;">
-<img alt="Dr. Syed Anees ur Rehman Shah Portrait" class="w-full h-full object-cover rounded-lg shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCauwed1Ac7IUmUD-UZ6DJRa98GwqzEdTCp_wDx7Wfvg1SfybdVsfcsWhES4qqyPEGIVYpNaP_DLIxbmGHj6qq4R0xahqO3BM5bOQH0FRTclB8RsNn1W0tNX0OslKnBBPh5agn7lZmF-g0daqBQ5n6U6N13TihwQ09AbZEkSWtSGDB3w97jMj0nBPp1UvshPP8fnTGC5oFaAQgv-fPIP2E2Z8ws5ya5M172dN2YkupOjV7uhw6LPbC3A58TG_A6I2DLSetwT5FxItE2-6Q">
+<div class="md:col-span-6 lg:col-span-6 flex justify-center items-center relative reveal-up active" style="transition-delay: 200ms;">
+<div class="relative w-full max-w-[320px] sm:max-w-[380px] md:max-w-[390px] lg:max-w-[460px] aspect-[4/5] mx-auto">
+<div class="absolute inset-0 bg-secondary/10 mask-organic-hero transform scale-[1.03] -rotate-1 filter blur-sm"></div>
+<img alt="Dr. Syed Anees ur Rehman Shah Portrait" class="relative z-10 w-full h-full object-cover mask-organic-hero shadow-md ring-1 ring-black/5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCauwed1Ac7IUmUD-UZ6DJRa98GwqzEdTCp_wDx7Wfvg1SfybdVsfcsWhES4qqyPEGIVYpNaP_DLIxbmGHj6qq4R0xahqO3BM5bOQH0FRTclB8RsNn1W0tNX0OslKnBBPh5agn7lZmF-g0daqBQ5n6U6N13TihwQ09AbZEkSWtSGDB3w97jMj0nBPp1UvshPP8fnTGC5oFaAQgv-fPIP2E2Z8ws5ya5M172dN2YkupOjV7uhw6LPbC3A58TG_A6I2DLSetwT5FxItE2-6Q">
+</div>
 </div>
 </div>
 </section>
@@ -397,46 +401,6 @@
 </div>
 </div>
 </section>
-<!-- 12. MEDIA / LATEST UPDATES -->
-<section class="py-section-padding-mobile md:py-section-padding px-grid-gutter max-w-container-max-width mx-auto">
-<div class="flex justify-between items-end mb-12 reveal-up active">
-<h2 class="font-headline-md text-headline-sm md:text-headline-md text-on-surface">Latest Updates</h2>
-<a class="hidden md:inline-flex items-center gap-2 text-on-secondary-fixed-variant font-label-caps hover:text-secondary" href="/media">All Articles <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<div class="reveal-up cursor-pointer group active">
-<div class="overflow-hidden rounded-lg mb-4 h-64 lg:h-80">
-<img alt="Featured Article" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDfEJW8t1bg2JmTswMGZA9vKopqfatM4w8R0pEbDwqAxTI4W-liyn550UFab31zr97jMlBKK1RKobryjnXrNiqOfFvhn9hm80nMBTGE73Am23m86YeHcjMeBlLsO2RGi5h_ZUX-jjYhAjbUJeMsO2VE47rf4chuiUXSmUB3WB5-9AEibbpxA2J7oDESb-oiV1rmnUB8GsVgbsbCMBNaT3R0Sb7CmHRM7A-7qnSQVvtnH9qPwUwCxQVJw">
-</div>
-<p class="font-label-caps text-on-surface-variant mb-2">Medical Journal · Oct 2024</p>
-<h3 class="font-headline-sm text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Advancements in Minimally Invasive Valve Surgery</h3>
-<p class="text-on-surface-variant">A comprehensive review of recent technological leaps in cardiac care.</p>
-</div>
-<div class="flex flex-col justify-between gap-6 reveal-up active" style="transition-delay: 200ms;">
-<div class="flex gap-4 cursor-pointer group items-center">
-<img alt="Media 1" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBleZzNGofhdFDLZxwWpEXl6DvLTZ8_tw5tBXO7eURJFdWb0sksWcE-XUhQHAvZv7kAVG_h5hc3zeVrIvuvuORa49ZjbmXAUv8efYlSOrUzOiYoi9-VjCQ_RczzdEuxsCPhFEskwSyoilnmUVpw1q96l0DmGR4EdCB7lI6CKB1SpDh976P3VCCJPzIb57wHWjHghF-5wwl8tBs0Ttvyf4TRQ6G6L1Ob3WpdAJHL7ZCtJS9VX8f47g0qag">
-<div>
-<p class="font-label-caps text-on-surface-variant mb-1 text-[10px]">News · Sep 2024</p>
-<h4 class="font-headline-sm text-lg text-on-surface group-hover:text-primary transition-colors">Heart Health Awareness Campaign Launch</h4>
-</div>
-</div>
-<div class="flex gap-4 cursor-pointer group items-center">
-<img alt="Media 2" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbgwnuPcD-N8Dt98l7PJJQZcDHTJI8xwkhr60MnHPF2PjpmkGWoH2fPsAPqmcCDXxIzKdQNQD37vcbq5cAObYoFZNG7m38UUW7qXtgmy-eO-nh8qYgmSDb4Eid7WvXUMuCOP3UFbT0tFz2uR_oaiZZ4RG7hOKqm9IBq_qMf5OMxoQNmOeTVEJicOsdZr91Lec-ri8TzAoBrWCHJ9MVr1mhfal73RI24oRx66X0KJ4uw0bUPPdPDSKxFA">
-<div>
-<p class="font-label-caps text-on-surface-variant mb-1 text-[10px]">Seminar · Aug 2024</p>
-<h4 class="font-headline-sm text-lg text-on-surface group-hover:text-primary transition-colors">Dr. Shah Speaks at Annual Cardiology Summit</h4>
-</div>
-</div>
-<div class="flex gap-4 cursor-pointer group items-center">
-<img alt="Media 3" class="w-24 h-24 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwHpXi5WU_xK4Pq_KPyn-NdpDUey9mW6mM-W1gFwbmm8bogKw4kPwVQCOzUvzeYWN8l921gqi7c5HUNhPc0QCq6PnT5EwBq-pgcr3rLc-eJpgnq3rHpS1_g2-816lyMhkYvMtvjLghdjEk4NGc2B1xi6Z2lfSnAbKByz-D5jUwblhV5py0bHe1J0-kVtGBUUUR2ycoFwApX14MfXYbsd2kA1RUsk5oPnzWBUPcTjltlduHdTHNdQih2Q">
-<div>
-<p class="font-label-caps text-on-surface-variant mb-1 text-[10px]">Publication · Jul 2024</p>
-<h4 class="font-headline-sm text-lg text-on-surface group-hover:text-primary transition-colors">Understanding Post-Op Care for CABG Patients</h4>
-</div>
-</div>
-</div>
-</div>
-</section>
 <!-- 13. SOCIAL MEDIA -->
 <section class="py-12 border-t border-outline-variant/30 max-w-container-max-width mx-auto px-grid-gutter">
 <h3 class="text-center font-label-caps text-on-surface-variant mb-8 uppercase tracking-widest reveal-up active">Connect With Us</h3>
@@ -511,7 +475,6 @@
 <li class=""><a class="text-surface-variant hover:text-white transition-colors" href="/expertise">Expertise</a></li>
 <li class=""><a class="text-surface-variant hover:text-white transition-colors" href="/procedures">Procedures</a></li>
 <li class=""><a class="text-surface-variant hover:text-white transition-colors" href="/stories">Patient Stories</a></li>
-<li class=""><a class="text-surface-variant hover:text-white transition-colors" href="/media">Media Center</a></li>
 </ul>
 </div>
 <div class="md:col-span-2">

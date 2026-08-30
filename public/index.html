@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Dr. Syed Anees ur Rehman Shah | Cardiac Surgeon</title>
+    <meta name="description" content="Official website of Dr. Syed Anees ur Rehman Shah, Consultant Cardiac Surgeon in Lahore, Pakistan specializing in CABG, Valve Repair & Replacement, and Adult Congenital Heart Surgery.">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/animations.css">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#ebe7e6",
+                        "secondary-fixed": "#d6e3ff",
+                        "outline": "#777871",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e5e2e0",
+                        "on-surface": "#1c1b1b",
+                        "surface-container-low": "#f7f3f1",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#313030",
+                        "outline-variant": "#c7c7bf",
+                        "on-surface-variant": "#464742",
+                        "surface-bright": "#fcf8f7",
+                        "tertiary": "#595f67",
+                        "on-tertiary-container": "#6c717a",
+                        "secondary-container": "#d2e0fe",
+                        "on-secondary-fixed-variant": "#39475f",
+                        "primary": "#5e5e5b",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#dee3ed",
+                        "primary-fixed-dim": "#c8c6c2",
+                        "tertiary-fixed-dim": "#c1c7d0",
+                        "on-tertiary-fixed-variant": "#42474f",
+                        "surface-container": "#f1edec",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#b9c7e4",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fcf8f7",
+                        "primary-container": "#f9f7f2",
+                        "inverse-primary": "#c8c6c2",
+                        "on-error": "#ffffff",
+                        "secondary": "#515f78",
+                        "on-background": "#1c1b1b",
+                        "on-secondary-container": "#55637d",
+                        "surface-tint": "#5e5e5b",
+                        "surface": "#fcf8f7",
+                        "on-primary-fixed-variant": "#474744",
+                        "primary-fixed": "#e4e2dd",
+                        "surface-variant": "#e5e2e0",
+                        "on-primary-container": "#71716d",
+                        "on-secondary-fixed": "#0d1c32",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#161c23",
+                        "surface-dim": "#ddd9d8",
+                        "on-primary-fixed": "#1b1c19",
+                        "tertiary-container": "#f4f7ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max-width": "1280px",
+                        "section-padding": "120px",
+                        "section-padding-mobile": "64px",
+                        "grid-gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "display-lg-mobile": ["Playfair Display", "serif"],
+                        "headline-sm": ["Playfair Display", "serif"],
+                        "display-lg": ["Playfair Display", "serif"],
+                        "headline-md": ["Playfair Display", "serif"],
+                        "label-caps": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-sm": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .btn-hover-shift span {
+            transition: transform 0.3s ease;
+        }
+        .btn-hover-shift:hover span {
+            transform: translateX(4px);
+        }
+        .mask-organic-hero {
+            border-radius: 46% 54% 56% 44% / 42% 46% 54% 58%;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .mask-organic-hero:hover {
+            border-radius: 50% 50% 50% 50% / 46% 50% 50% 54%;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+    <!-- 1. HEADER -->
+    <header class="fixed top-0 w-full z-50 bg-surface/95 dark:bg-surface-dim/95 backdrop-blur-md border-b border-outline-variant dark:border-outline transition-colors duration-300">
+        <div class="flex justify-between items-center w-full px-4 sm:px-6 lg:px-grid-gutter max-w-container-max-width mx-auto h-20">
+            <a class="font-display-lg text-lg sm:text-xl lg:text-2xl xl:text-headline-sm text-on-surface dark:text-on-surface-variant font-bold tracking-tight shrink-0 pr-2 lg:pr-4 hover:opacity-80 transition-opacity" href="/">
+                Dr. Syed Anees ur Rehman
+            </a>
+            <nav class="hidden lg:flex gap-6 xl:gap-8 items-center">
+                <a class="text-secondary font-semibold border-b-2 border-secondary pb-0.5 transition-all duration-300 font-body-md whitespace-nowrap" href="/">Home</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md whitespace-nowrap" href="/about">About</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md whitespace-nowrap" href="/expertise">Expertise &amp; Procedures</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md whitespace-nowrap" href="/stories">Patient Stories</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a class="hidden sm:inline-flex items-center gap-2 bg-on-secondary-fixed-variant text-surface px-4 py-2.5 lg:px-6 lg:py-3 rounded text-sm lg:text-base hover:bg-secondary transition-colors btn-hover-shift whitespace-nowrap font-medium" href="/contact">
+                    Book a Consultation
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-on-surface p-2 rounded-md hover:bg-surface-container focus:outline-none focus:ring-2 focus:ring-secondary" aria-label="Toggle Navigation">
+                    <span class="material-symbols-outlined text-2xl">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile & Tablet Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-surface border-b border-outline-variant px-6 py-5 space-y-3 shadow-lg">
+            <a class="block text-secondary font-semibold py-2 border-b border-outline-variant/30 text-base" href="/">Home</a>
+            <a class="block text-on-surface hover:text-primary py-2 border-b border-outline-variant/30 text-base" href="/about">About Dr. Shah</a>
+            <a class="block text-on-surface hover:text-primary py-2 border-b border-outline-variant/30 text-base" href="/expertise">Expertise &amp; Procedures</a>
+            <a class="block text-on-surface hover:text-primary py-2 border-b border-outline-variant/30 text-base" href="/stories">Patient Stories</a>
+            <a class="block w-full text-center bg-on-secondary-fixed-variant text-surface px-6 py-3.5 rounded font-semibold mt-4 text-base hover:bg-secondary transition-colors" href="/contact">Book a Consultation</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- 2. HERO -->
+        <section class="min-h-[750px] lg:min-h-[820px] flex items-center py-12 md:py-16 lg:py-section-padding px-4 sm:px-6 lg:px-grid-gutter max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-grid-gutter items-center w-full">
+                <div class="md:col-span-6 lg:col-span-6">
+                    <p class="font-label-caps text-label-caps text-on-surface-variant mb-4 lg:mb-6 uppercase tracking-widest hero-animate delay-100">Cardiac Surgeon · Lahore</p>
+                    <h1 class="font-display-lg text-3xl sm:text-4xl md:text-3xl lg:text-5xl xl:text-display-lg text-on-surface mb-4 lg:mb-6 leading-[1.15] hero-animate delay-200">
+                        Expert Cardiac Care, <br><span class="italic text-on-surface-variant">Centered Around You.</span>
+                    </h1>
+                    <p class="font-body-lg text-base sm:text-lg lg:text-body-lg text-on-surface-variant mb-8 lg:mb-10 max-w-lg hero-animate delay-300">
+                        Providing world-class cardiovascular surgical interventions with a focus on precision, compassion, and individualized patient outcomes in a state-of-the-art environment.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 hero-animate delay-400">
+                        <a class="flex items-center justify-center gap-2 bg-on-secondary-fixed-variant text-surface px-6 sm:px-8 py-3.5 sm:py-4 rounded hover:bg-secondary transition-colors btn-hover-shift font-medium" href="/contact">
+                            Book a Consultation
+                            <span class="material-symbols-outlined text-sm sm:text-base">arrow_forward</span>
+                        </a>
+                        <a class="flex items-center justify-center gap-2 border border-outline px-6 sm:px-8 py-3.5 sm:py-4 rounded hover:bg-surface-variant transition-colors btn-hover-shift font-medium" href="/expertise">
+                            Explore Expertise
+                        </a>
+                    </div>
+                </div>
+                <div class="md:col-span-6 lg:col-span-6 flex justify-center items-center relative hero-animate-image delay-300">
+                    <div class="relative w-full max-w-[320px] sm:max-w-[380px] md:max-w-[390px] lg:max-w-[460px] aspect-[4/5] mx-auto">
+                        <div class="absolute inset-0 bg-secondary/10 mask-organic-hero transform scale-[1.03] -rotate-1 filter blur-sm"></div>
+                        <img alt="Dr. Syed Anees ur Rehman Shah Portrait" class="relative z-10 w-full h-full object-cover mask-organic-hero shadow-md ring-1 ring-black/5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCauwed1Ac7IUmUD-UZ6DJRa98GwqzEdTCp_wDx7Wfvg1SfybdVsfcsWhES4qqyPEGIVYpNaP_DLIxbmGHj6qq4R0xahqO3BM5bOQH0FRTclB8RsNn1W0tNX0OslKnBBPh5agn7lZmF-g0daqBQ5n6U6N13TihwQ09AbZEkSWtSGDB3w97jMj0nBPp1UvshPP8fnTGC5oFaAQgv-fPIP2E2Z8ws5ya5M172dN2YkupOjV7uhw6LPbC3A58TG_A6I2DLSetwT5FxItE2-6Q">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. TRUST STRIP -->
+        <div class="w-full bg-surface-container py-8 border-y border-outline-variant/30 overflow-hidden">
+            <div class="flex whitespace-nowrap animate-[scroll_20s_linear_infinite] gap-12 text-on-surface-variant font-label-caps text-label-caps uppercase tracking-widest">
+                <span>Cardiac Surgery</span>
+                <span class="opacity-30">|</span>
+                <span>Precision</span>
+                <span class="opacity-30">|</span>
+                <span>Patient-Centered Care</span>
+                <span class="opacity-30">|</span>
+                <span>Advanced Care</span>
+                <span class="opacity-30">|</span>
+                <span>Lahore</span>
+                <span class="opacity-30">|</span>
+                <span>Cardiac Surgery</span>
+                <span class="opacity-30">|</span>
+                <span>Precision</span>
+                <span class="opacity-30">|</span>
+                <span>Patient-Centered Care</span>
+            </div>
+        </div>
+
+        <!-- 4. ABOUT DR. ANEES -->
+        <section class="py-section-padding-mobile md:py-section-padding px-grid-gutter max-w-container-max-width mx-auto" id="about">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter items-center">
+                <div class="md:col-span-5 relative h-[600px] reveal-up image-reveal">
+                    <img alt="Cardiac Surgeon Hands" class="w-full h-full object-cover rounded shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZw4pi0FcWeHJybty0pgydXwkBcAUL_Otl1V5JC110cDYJJgH7WTXxS97UmkDwxCREyBU9x3bOOga3uCoG61dWsl4I8AsvDe5sJk09ZPaoAOQKcM3bgsdEs0xXMUUyC0EBBaUqcMHER9CuHHGA7qaEkss8Ivs34Mau-v9H2rnaIttUIbMR3HxBimNsYe8OmLw3iKSzCcrp3g9LPd4buS7TqX6VWP7UhoA-RHPmuRVtu8xm4nKmqwkn0w">
+                </div>
+                <div class="md:col-span-6 md:col-start-7 reveal-up delay-200">
+                    <h2 class="font-headline-md text-display-lg-mobile md:text-headline-md text-on-surface mb-8">
+                        Precision in Surgery. <br>Compassion in Care.
+                    </h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        With over a decade of dedicated experience in complex cardiovascular procedures, Dr. Shah combines technical mastery with an unwavering commitment to patient well-being.
+                    </p>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-10">
+                        Every patient journey is unique. We believe in providing clear, thoughtful communication alongside advanced surgical interventions to ensure peace of mind and optimal recovery.
+                    </p>
+                    <a class="inline-flex items-center gap-2 text-on-secondary-fixed-variant font-label-caps text-label-caps uppercase tracking-widest hover:text-secondary transition-colors btn-hover-shift border-b border-on-secondary-fixed-variant pb-1" href="/about">
+                        Meet Dr. Anees Shah
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROFESSIONAL CREDENTIALS -->
+        <section class="py-section-padding-mobile md:py-section-padding bg-surface-container-low border-t border-outline-variant/20">
+            <div class="max-w-container-max-width mx-auto px-grid-gutter">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="reveal-up editorial-card bg-surface p-6 rounded-lg">
+                        <span class="material-symbols-outlined text-4xl text-on-secondary-fixed-variant mb-4">medical_services</span>
+                        <h3 class="font-headline-sm text-2xl text-on-surface mb-2">Expertise</h3>
+                        <p class="text-on-surface-variant">Over 10 years of specialized experience in complex cardiac procedures.</p>
+                    </div>
+                    <div class="reveal-up delay-100 editorial-card bg-surface p-6 rounded-lg">
+                        <span class="material-symbols-outlined text-4xl text-on-secondary-fixed-variant mb-4">precision_manufacturing</span>
+                        <h3 class="font-headline-sm text-2xl text-on-surface mb-2">Precision</h3>
+                        <p class="text-on-surface-variant">Utilizing state-of-the-art technology for accurate and safe surgical outcomes.</p>
+                    </div>
+                    <div class="reveal-up delay-200 editorial-card bg-surface p-6 rounded-lg">
+                        <span class="material-symbols-outlined text-4xl text-on-secondary-fixed-variant mb-4">favorite</span>
+                        <h3 class="font-headline-sm text-2xl text-on-surface mb-2">Care</h3>
+                        <p class="text-on-surface-variant">Dedicated to patient-centered compassion and comprehensive recovery support.</p>
+                    </div>
+                    <div class="reveal-up delay-300 editorial-card bg-surface p-6 rounded-lg">
+                        <span class="material-symbols-outlined text-4xl text-on-secondary-fixed-variant mb-4">local_hospital</span>
+                        <h3 class="font-headline-sm text-2xl text-on-surface mb-2">Practice</h3>
+                        <p class="text-on-surface-variant">Operating at Lahore's premier medical facilities with advanced infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CARDIAC EXPERTISE -->
+        <section class="py-section-padding-mobile md:py-section-padding px-grid-gutter max-w-container-max-width mx-auto">
+            <h2 class="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-12 text-center reveal-up">Cardiac Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-surface-container rounded-lg p-8 reveal-up editorial-card">
+                    <h3 class="font-headline-sm text-xl text-on-surface mb-3">Coronary Artery Bypass</h3>
+                    <p class="text-on-surface-variant mb-6">Restoring blood flow to your heart with precision bypass techniques.</p>
+                    <a class="text-on-secondary-fixed-variant font-label-caps hover:text-secondary inline-flex items-center gap-1 btn-hover-shift" href="/expertise">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-surface-container rounded-lg p-8 reveal-up delay-100 editorial-card">
+                    <h3 class="font-headline-sm text-xl text-on-surface mb-3">Valve Repair &amp; Replacement</h3>
+                    <p class="text-on-surface-variant mb-6">Advanced surgical solutions for mitral, aortic, and tricuspid valve disease.</p>
+                    <a class="text-on-secondary-fixed-variant font-label-caps hover:text-secondary inline-flex items-center gap-1 btn-hover-shift" href="/expertise">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-surface-container rounded-lg p-8 reveal-up delay-200 editorial-card">
+                    <h3 class="font-headline-sm text-xl text-on-surface mb-3">Adult Congenital Surgery</h3>
+                    <p class="text-on-surface-variant mb-6">Specialized care for adults living with congenital heart conditions.</p>
+                    <a class="text-on-secondary-fixed-variant font-label-caps hover:text-secondary inline-flex items-center gap-1 btn-hover-shift" href="/expertise">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-surface-container rounded-lg p-8 reveal-up editorial-card">
+                    <h3 class="font-headline-sm text-xl text-on-surface mb-3">Complex Cardiac Re-operations</h3>
+                    <p class="text-on-surface-variant mb-6">Expert management and surgical intervention for previous heart surgeries.</p>
+                    <a class="text-on-secondary-fixed-variant font-label-caps hover:text-secondary inline-flex items-center gap-1 btn-hover-shift" href="/expertise">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-surface-container rounded-lg p-8 reveal-up delay-100 editorial-card">
+                    <h3 class="font-headline-sm text-xl text-on-surface mb-3">Pre-Surgical Consultation</h3>
+                    <p class="text-on-surface-variant mb-6">Thorough evaluation and personalized treatment planning before surgery.</p>
+                    <a class="text-on-secondary-fixed-variant font-label-caps hover:text-secondary inline-flex items-center gap-1 btn-hover-shift" href="/contact">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <!-- Card 6 -->
+                <div class="bg-surface-container rounded-lg p-8 reveal-up delay-200 editorial-card">
+                    <h3 class="font-headline-sm text-xl text-on-surface mb-3">Post-Surgical Care</h3>
+                    <p class="text-on-surface-variant mb-6">Comprehensive follow-up and rehabilitation guidance for optimal recovery.</p>
+                    <a class="text-on-secondary-fixed-variant font-label-caps hover:text-secondary inline-flex items-center gap-1 btn-hover-shift" href="/expertise">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FEATURED CARE / LARGE IMAGE SECTION -->
+        <section class="w-full h-[600px] relative reveal-up card-zoom">
+            <img alt="Featured Care Facility" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSrJYJPgWae7A6u6HM01i3q6r2ZP7i6huqmN2dNN1Vrx0C_aWvEibWLzV_AsjbIdJlOD739zV9l8ViYUUXFFuJll4m4Bv-Cr8zEM7adl-DHoQrAjmesaWZbHtXBiawz83FXhpv-_cgINO7C5cExIamMlEBeJ2UsEdo1NeNNjeU8abfy8HQLdr7bVeijSPkqPwG2Mu27NYsAd1qawNyYfSBDTtBx0qKRvKmNH3ITX-oWWqXMPn73aMReg">
+            <div class="absolute inset-0 bg-on-secondary-fixed-variant/60 flex items-center justify-center">
+                <div class="text-center px-4 max-w-3xl">
+                    <h2 class="font-headline-md text-surface mb-6">Excellence in Cardiovascular Intervention</h2>
+                    <p class="font-body-lg text-surface-variant mb-8">Pioneering techniques for better outcomes and faster recovery times.</p>
+                    <a class="inline-flex items-center justify-center gap-2 bg-surface text-on-secondary-fixed-variant px-8 py-4 rounded hover:bg-surface-variant transition-colors btn-hover-shift font-medium" href="/expertise">
+                        Explore Our Approach
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CARE PHILOSOPHY -->
+        <section class="py-section-padding-mobile md:py-section-padding px-grid-gutter max-w-container-max-width mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal-up">
+                <p class="font-label-caps text-label-caps text-on-surface-variant mb-4 uppercase tracking-widest">Our Approach</p>
+                <h2 class="font-headline-md text-headline-sm md:text-headline-md text-on-surface">A Philosophy Built on Trust</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="reveal-up border-l-2 border-outline-variant pl-6">
+                    <h3 class="font-headline-sm text-2xl text-on-surface mb-3">Precision</h3>
+                    <p class="text-on-surface-variant">Meticulous attention to detail in every surgical step.</p>
+                </div>
+                <div class="reveal-up delay-100 border-l-2 border-outline-variant pl-6">
+                    <h3 class="font-headline-sm text-2xl text-on-surface mb-3">Communication</h3>
+                    <p class="text-on-surface-variant">Clear, honest, and continuous dialogue with patients and families.</p>
+                </div>
+                <div class="reveal-up border-l-2 border-outline-variant pl-6">
+                    <h3 class="font-headline-sm text-2xl text-on-surface mb-3">Individualized Care</h3>
+                    <p class="text-on-surface-variant">Tailored treatment plans that respect unique medical histories.</p>
+                </div>
+                <div class="reveal-up delay-100 border-l-2 border-outline-variant pl-6">
+                    <h3 class="font-headline-sm text-2xl text-on-surface mb-3">Continuity</h3>
+                    <p class="text-on-surface-variant">Unwavering support from initial consultation through full recovery.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. PROCEDURES PREVIEW -->
+        <section class="py-section-padding-mobile md:py-section-padding bg-surface-container-low">
+            <div class="max-w-container-max-width mx-auto px-grid-gutter">
+                <div class="flex justify-between items-end mb-12 reveal-up">
+                    <h2 class="font-headline-md text-headline-sm md:text-headline-md text-on-surface">Key Procedures</h2>
+                    <a class="hidden md:inline-flex items-center gap-2 text-on-secondary-fixed-variant font-label-caps hover:text-secondary btn-hover-shift" href="/expertise">View All <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="group cursor-pointer reveal-up procedure-card">
+                        <div class="overflow-hidden rounded-lg mb-4 h-48 card-zoom">
+                            <img alt="Procedure 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfNLHlOwQLkhRtfBqFKO_1jXhUUXisY1s4TxdsdIr5FsPPuQDia8igOx6-mJWB_sNGGrdCXzCjH7QgWGxz_zKbulGPRcn5MLZszDa5Wg9YFQlv3JQY7-H8a76aCYUfbauMq7qSsOzyicDddo9DN7hxC3RlYGKMytwkzDGbR0YfHNF8DifwY6JKNu-a0cYX14B2mPG1lqMGrvBJwYkUNCzHujqebKVGOe0uKnxPKqV0anic2MZqT18E0A">
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-on-surface mb-1">CABG Surgery</h3>
+                        <p class="text-sm text-on-surface-variant">Coronary Artery Bypass</p>
+                    </div>
+                    <div class="group cursor-pointer reveal-up delay-100 procedure-card">
+                        <div class="overflow-hidden rounded-lg mb-4 h-48 card-zoom">
+                            <img alt="Procedure 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD76_ZXxIf54U_zrntCKQFvd5jjW2eoi1apyOE6zcPqv89rw7zh9rQQyZvMCGFkchjGwksff3Qi5Sc08-pM6HW13aWxv-mdE6ZbzgSlVmM3c2YIi0yRncJg_vPWGyrayzO2-CIe04_Cx4ym5VN9akHz2s8N7zL-64qkGUXIaIj1u3NXfxv9T_cjzNIWEPrNwgAsdUnzFh5f4GPmAdDYkuOnvaEmcnfgqkh6irLSrRp6_4W4EzenGrf8VA">
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-on-surface mb-1">Valve Replacement</h3>
+                        <p class="text-sm text-on-surface-variant">Mitral &amp; Aortic</p>
+                    </div>
+                    <div class="group cursor-pointer reveal-up delay-200 procedure-card">
+                        <div class="overflow-hidden rounded-lg mb-4 h-48 card-zoom">
+                            <img alt="Procedure 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArhBrnHe1LpNgDgJwQqfZb_aonreweyinH3GKwu3WHUMTBp_aHEHil_-tyjEpowaqhpNKxZMkP96Rm2goXV8tURlkE2_8wmfR4LnHMqHtELQrLCOWA37M8RstNrV99Hs5MqLoFUrOT103VXboo6uase4z4oQFMznddaMqCLQhlK0NakWwveJ2QXUehpo4mpMcdNfu9uYD4ENcyvCIWoI0vi7QdOD2qTTLze8exDtRHsjW3x2qjuAzTww">
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-on-surface mb-1">Aneurysm Repair</h3>
+                        <p class="text-sm text-on-surface-variant">Aortic Interventions</p>
+                    </div>
+                    <div class="group cursor-pointer reveal-up delay-300 procedure-card">
+                        <div class="overflow-hidden rounded-lg mb-4 h-48 card-zoom">
+                            <img alt="Procedure 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHiJXbsX3elJznpScI9x63Gr_a2OgbMKC2_D-E3AEkYkDBRhpe6KxF__ciL0Gtc_D9bJQZlL7XSlarMa2DHsFHYNghqqzb7do3bToQAY8-VknmiNOQoEDPVcyn4WEABC7T2s67m4qRwyZByOWvMALcrbXEvUraU43ZVqVm4I1sSudGvna598NchU4gDy8ZF2WcBRe4SOCSO53gHFnJ0yExH7fKnzwMFP-AUhW9sUkVsECjG-dFfA1fBw">
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-on-surface mb-1">Minimally Invasive</h3>
+                        <p class="text-sm text-on-surface-variant">Advanced Techniques</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. WHY CHOOSE DR. ANEES -->
+        <section class="py-section-padding-mobile md:py-section-padding px-grid-gutter max-w-container-max-width mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 reveal-up">
+                    <h2 class="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-6">Why Choose Dr. Anees?</h2>
+                    <p class="font-body-lg text-on-surface-variant mb-6">A track record of excellence, driven by a passion for saving lives and improving quality of life.</p>
+                    <ul class="space-y-4 text-on-surface-variant">
+                        <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> International Fellowship Training</li>
+                        <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> 1000+ Successful Surgeries</li>
+                        <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary">check_circle</span> Multidisciplinary Team Approach</li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-7 grid grid-cols-2 gap-4 reveal-up delay-200 image-reveal">
+                    <img alt="Surgery" class="rounded-lg w-full h-64 object-cover mt-8 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlUANciBwdiyXGwE_qQR9wxdRrDoIFUqMnbkMWCpd-tv4GyQlUSboGrkWXU4KYTeSr9mJpcsVqCid3PrDtXACjvDlhEGIa2Ko4-iRXvAXx0PI0r3p0-UCClhoqeqy1z1St5D35EvHhvAOlixvJhmbeqw_T_EcqaqI0JVafb6CrQtDeAOcTTk9S2lhikrR-NB49F5XX9MxbJ2cq3xmAtjkyc6D8NnJ7MVkhWWGrYJjzv5PWmEuoglIL-Q">
+                    <img alt="Consultation" class="rounded-lg w-full h-80 object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnsNiE2_xgYQ62G23U0HXt3jCbKvnxx-S1EZo54iWdtDY5fPAhFjHYkg6INoAY0ytjJOPigIN7MtDu3wYOOeog07MEMzQ_ZljuToV2NddB9tV7P1qkcz-UNiNzLvTthCKz4crRD26aLAmlzx3tl08E_C_bfyh0KOVzuEjdi4TwqpVeFbtAwzBllsY5F3B_pfong5mEIf2Ja7xvxfVEEvlLoo14Y7uEquZPy8NFNjvChikBR3rwcSOQoQ">
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. PATIENT STORIES PREVIEW -->
+        <section class="py-section-padding-mobile md:py-section-padding bg-surface-container-highest">
+            <div class="max-w-container-max-width mx-auto px-grid-gutter text-center reveal-up">
+                <h2 class="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-12">Stories of Recovery</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                    <div class="bg-surface p-8 rounded-lg shadow-sm editorial-card">
+                        <p class="italic text-on-surface-variant mb-6">"Dr. Shah's calm demeanor and clear explanation of the bypass procedure gave me the confidence I needed. The recovery was smoother than I ever expected."</p>
+                        <p class="font-headline-sm text-lg text-on-surface">- M. Ahmed</p>
+                    </div>
+                    <div class="bg-surface p-8 rounded-lg shadow-sm editorial-card delay-100">
+                        <p class="italic text-on-surface-variant mb-6">"After my valve replacement, I feel like I've been given a second chance at life. The care from the entire team was exceptional."</p>
+                        <p class="font-headline-sm text-lg text-on-surface">- S. Fatima</p>
+                    </div>
+                    <div class="bg-surface p-8 rounded-lg shadow-sm editorial-card delay-200">
+                        <p class="italic text-on-surface-variant mb-6">"He didn't just treat my heart condition; he treated me as a person. I am forever grateful for his skill and compassion."</p>
+                        <p class="font-headline-sm text-lg text-on-surface">- Tariq R.</p>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <a class="inline-flex items-center gap-2 text-on-secondary-fixed-variant font-label-caps uppercase tracking-widest hover:text-secondary border-b border-on-secondary-fixed-variant pb-1 btn-hover-shift" href="/stories">Read More Stories <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. CONSULTATION CTA -->
+        <section class="py-section-padding-mobile md:py-section-padding bg-on-secondary-fixed-variant text-surface text-center reveal-up">
+            <div class="max-w-3xl mx-auto px-grid-gutter">
+                <h2 class="font-headline-md text-headline-sm md:text-headline-md mb-6 text-surface">Ready for Expert Cardiac Care?</h2>
+                <p class="font-body-lg mb-10 text-surface-variant">Schedule your consultation today to discuss your heart health with Dr. Shah.</p>
+                <a class="inline-flex items-center justify-center gap-2 bg-surface text-on-secondary-fixed-variant px-10 py-4 rounded hover:bg-surface-variant transition-colors btn-hover-shift font-medium" href="/contact">
+                    Book Your Appointment Now
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 14. CONTACT & CLINIC -->
+        <section class="py-section-padding-mobile md:py-section-padding bg-surface-container-low" id="contact">
+            <div class="max-w-container-max-width mx-auto px-grid-gutter">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-grid-gutter reveal-up">
+                    <div>
+                        <h2 class="font-headline-md text-headline-sm md:text-headline-md text-on-surface mb-8">Visit the Clinic</h2>
+                        <div class="mb-8">
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Primary Practice</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-1">Lahore Medical Complex</p>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-4">123 Health Avenue, Block D<br>Lahore, Pakistan</p>
+                            <a class="inline-flex items-center gap-2 text-on-secondary-fixed-variant font-label-caps text-label-caps uppercase tracking-widest hover:text-secondary transition-colors btn-hover-shift" href="https://www.google.com/maps/dir/?api=1&destination=Lahore+Medical+Complex+123+Health+Avenue+Block+D+Lahore" target="_blank" rel="noopener noreferrer">
+    <span class="material-symbols-outlined text-sm">map</span>
+    Get Directions &amp; Book
+</a>
+                        </div>
+                        <div>
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Consultation Hours</h3>
+                            <ul class="font-body-md text-body-md text-on-surface-variant space-y-2">
+                                <li class="flex justify-between max-w-xs border-b border-outline-variant/30 pb-2"><span>Mon - Thu</span> <span>9:00 AM - 5:00 PM</span></li>
+                                <li class="flex justify-between max-w-xs border-b border-outline-variant/30 pb-2"><span>Friday</span> <span>9:00 AM - 1:00 PM</span></li>
+                                <li class="flex justify-between max-w-xs pb-2"><span>Weekend</span> <span>Emergencies Only</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="h-[400px] md:h-auto rounded bg-surface-container overflow-hidden relative card-zoom">
+    <a href="https://www.google.com/maps/search/?api=1&query=Lahore+Medical+Complex+123+Health+Avenue+Block+D+Lahore" target="_blank" rel="noopener noreferrer" class="block w-full h-full cursor-pointer">
+        <img alt="Map of Lahore" class="w-full h-full object-cover opacity-80 mix-blend-multiply hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxoalMMN0a3UEMmzRRJ29mPDANiA61BX3YJfOXEw241tq9a_d1ME_dd8hQjt3moy8af7CAcFUnd3PtiI0nFwFhrd9qr7KRlqeGt8LPtwJVwiS_LSoKh1bw8E4LEgaJlHu4eXHcpy1JpXd_qa0UMGqMg2-V71ZXnL6BrgJKf2q5HKjnTSNDvP3Z2wEotx8D8Mmqc50Zu3lODvQ_6ufVUksyxkJ2uTbplZ1Wj8UqcYjzvyBcUBBOwYUDcw">
+    </a>
+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 15. FOOTER (Refined & Compact) -->
+    <footer class="w-full py-12 md:py-14 bg-on-secondary-fixed-variant dark:bg-on-tertiary-fixed text-surface">
+        <div class="max-w-container-max-width mx-auto px-4 sm:px-6 lg:px-grid-gutter">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-grid-gutter mb-10">
+                <!-- Col 1: Identity & Bio -->
+                <div class="md:col-span-6 lg:col-span-5 flex flex-col gap-3.5">
+                    <a class="font-display-lg text-xl md:text-2xl text-surface font-bold tracking-tight block hover:opacity-90 transition-opacity" href="/">
+                        Dr. Syed Anees ur Rehman
+                    </a>
+                    <p class="font-body-md text-surface-variant/80 max-w-md leading-relaxed text-sm">
+                        Consultant Cardiovascular &amp; Thoracic Surgeon providing precision cardiac interventions, minimally invasive procedures, and compassionate patient-centered care in Lahore.
+                    </p>
+                    <div class="flex items-center gap-2.5 mt-1 text-surface-variant/90 text-sm">
+                        <span class="material-symbols-outlined text-base text-secondary-fixed">location_on</span>
+                        <span>Lahore Medical Complex, 123 Health Ave, Lahore</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 text-surface-variant/90 text-sm">
+                        <span class="material-symbols-outlined text-base text-secondary-fixed">phone</span>
+                        <span>+92 (42) 3587-0000 / +92 300-1234567</span>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation -->
+                <div class="md:col-span-3 lg:col-span-3 md:col-start-7 lg:col-start-7">
+                    <h4 class="font-label-caps text-xs uppercase tracking-widest text-surface/60 font-semibold mb-3.5">Navigation</h4>
+                    <ul class="space-y-2 text-sm font-body-md">
+                        <li><a class="text-surface-variant hover:text-white transition-colors" href="/">Home</a></li>
+                        <li><a class="text-surface-variant hover:text-white transition-colors" href="/about">About Dr. Shah</a></li>
+                        <li><a class="text-surface-variant hover:text-white transition-colors" href="/expertise">Expertise &amp; Procedures</a></li>
+                        <li><a class="text-surface-variant hover:text-white transition-colors" href="/stories">Patient Stories</a></li>
+                        <li><a class="text-surface-variant hover:text-white transition-colors" href="/contact">Book Consultation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Legal & Hours -->
+                <div class="md:col-span-3 lg:col-span-3">
+                    <h4 class="font-label-caps text-xs uppercase tracking-widest text-surface/60 font-semibold mb-3.5">Clinic Hours &amp; Legal</h4>
+                    <p class="text-surface-variant/80 text-sm mb-3 leading-relaxed">
+                        <strong class="text-surface font-medium">Mon – Thu:</strong> 9:00 AM – 5:00 PM<br>
+                        <strong class="text-surface font-medium">Friday:</strong> 9:00 AM – 1:00 PM<br>
+                        <strong class="text-surface font-medium">Emergency:</strong> 24/7 On-Call
+                    </p>
+                    <div class="pt-2 border-t border-surface/10 space-y-1 text-sm">
+                        <div><a class="text-surface-variant hover:text-white transition-colors" href="/privacy">Privacy Policy</a></div>
+                        <div><a class="text-surface-variant hover:text-white transition-colors" href="/terms">Terms of Service</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Disclaimer & Copyright -->
+            <div class="pt-6 border-t border-surface/15 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 text-xs text-surface/60">
+                <p>© 2024 Dr. Syed Anees ur Rehman. All rights reserved.</p>
+                <p class="max-w-xl text-xs text-surface/50 leading-normal">
+                    Medical Disclaimer: Clinical information on this site is for educational reference and does not constitute formal medical diagnosis or advice.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/animations.js" defer></script>
+</body>
+</html>
