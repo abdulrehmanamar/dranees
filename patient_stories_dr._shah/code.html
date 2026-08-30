@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Patient Stories - Dr. Syed Anees ur Rehman Shah</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#ebe7e6",
+                        "tertiary-container": "#f4f7ff",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#71716d",
+                        "secondary-container": "#d2e0fe",
+                        "on-background": "#1c1b1b",
+                        "outline-variant": "#c7c7bf",
+                        "background": "#fcf8f7",
+                        "on-surface-variant": "#464742",
+                        "error-container": "#ffdad6",
+                        "surface": "#fcf8f7",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#6c717a",
+                        "surface-container-low": "#f7f3f1",
+                        "on-secondary-container": "#55637d",
+                        "surface-variant": "#e5e2e0",
+                        "inverse-primary": "#c8c6c2",
+                        "tertiary": "#595f67",
+                        "surface-dim": "#ddd9d8",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#0d1c32",
+                        "inverse-on-surface": "#f4f0ef",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fcf8f7",
+                        "primary-fixed-dim": "#c8c6c2",
+                        "inverse-surface": "#313030",
+                        "primary-fixed": "#e4e2dd",
+                        "on-secondary-fixed-variant": "#39475f",
+                        "tertiary-fixed-dim": "#c1c7d0",
+                        "on-surface": "#1c1b1b",
+                        "tertiary-fixed": "#dee3ed",
+                        "error": "#ba1a1a",
+                        "secondary": "#515f78",
+                        "primary": "#5e5e5b",
+                        "primary-container": "#f9f7f2",
+                        "surface-container": "#f1edec",
+                        "on-tertiary-fixed": "#161c23",
+                        "secondary-fixed": "#d6e3ff",
+                        "secondary-fixed-dim": "#b9c7e4",
+                        "surface-tint": "#5e5e5b",
+                        "surface-container-highest": "#e5e2e0",
+                        "on-primary-fixed-variant": "#474744",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#1b1c19",
+                        "on-tertiary-fixed-variant": "#42474f",
+                        "outline": "#777871"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-padding-mobile": "64px",
+                        "grid-gutter": "32px",
+                        "container-max-width": "1280px",
+                        "section-padding": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["48px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-sm": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Organic Masks */
+        .mask-organic-1 { border-radius: 12rem 2rem 2rem 2rem; }
+        .mask-organic-2 { border-radius: 2rem 12rem 2rem 2rem; }
+        .mask-organic-3 { border-radius: 2rem 2rem 12rem 2rem; }
+        .mask-organic-4 { border-radius: 2rem 2rem 2rem 12rem; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-container-max-width mx-auto">
+<a class="font-headline-sm text-headline-sm font-semibold text-on-surface hover:text-secondary transition-colors duration-300" href="#">
+                Dr. Syed Anees ur Rehman Shah
+            </a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Expertise</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Procedures</a>
+<a aria-current="page" class="text-secondary border-b-2 border-secondary pb-1 transition-colors duration-300" href="#">Patient Stories</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-300" href="#">Media Center</a>
+</div>
+<a class="hidden md:flex items-center justify-center px-6 py-3 bg-secondary text-on-secondary rounded-full font-label-caps text-label-caps hover:brightness-110 hover:shadow-lg shadow-secondary/10 transition-all duration-300 group" href="#consultation">
+                Book a Consultation
+                <span class="material-symbols-outlined ml-2 text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<header class="px-8 py-section-padding-mobile md:py-section-padding max-w-container-max-width mx-auto text-center md:text-left fade-up">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6 max-w-4xl">
+                Stories of Care &amp; Recovery
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Exploring the journeys of those who have entrusted us with their cardiac health. Each story represents a unique path toward healing, guided by expertise and compassionate care.
+            </p>
+</header>
+<!-- Editorial Grid Section -->
+<section class="px-8 pb-section-padding max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter items-start">
+<!-- Story Card 1 -->
+<article class="col-span-1 md:col-span-7 group cursor-pointer fade-up">
+<div class="mask-organic-1 overflow-hidden relative h-[400px] md:h-[600px] bg-surface-container-low mb-8">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A high-quality, editorial-style photograph capturing a serene moment of patient recovery in a premium, sunlit cardiac care facility. The lighting is soft and natural, emphasizing a calm, high-end medical environment. The color palette features soothing lavenders, pristine whites, and warm natural tones. A sense of quiet authority and sophisticated care is paramount, avoiding sterile industrial vibes." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF1lxikwPsg7EadOYaMrv8mnSdG9kzLR6GK2ebJ5QdrhOXHJt55tYFl0mUK2loo1UkitbTI1ANtzeNO6fcXR7v7FH0ioPXgAPOw1VcBz-NdquXYmFec8vovDiIfD2StSjiRiN1NN24nSijXHSWW7RXM-e_srPUWC3HzUYpdRJ32teMJTxnPpIkQ0FSMvNRJRQnrnXU519WRGKxT5q1KtsTUqjtsZxWlWLfnjFdMctmYlzFSGDNysfgKw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="flex flex-col gap-4 px-4 md:px-0">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Complex Mitral Valve Repair</span>
+<h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors duration-300">
+                            Returning to the Summit After Heart Surgery
+                        </h2>
+<div class="flex items-center gap-2 text-secondary font-medium mt-2">
+<span class="border-b border-secondary pb-0.5">View Story</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-2 transition-transform duration-300">east</span>
+</div>
+</div>
+</article>
+<!-- Story Card 2 (Staggered) -->
+<article class="col-span-1 md:col-span-5 md:mt-32 group cursor-pointer fade-up">
+<div class="mask-organic-2 overflow-hidden relative h-[400px] md:h-[500px] bg-surface-container-low mb-8">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="An elegant, modern portrait of an elderly patient walking alongside a supportive medical professional in a minimalist, upscale clinic corridor. The scene conveys trust, resilience, and bespoke private-practice care. The aesthetic is clean, light-mode, with expansive whitespace implied by the architecture. Warm natural light filters through large windows, creating a hopeful and sophisticated atmosphere." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGFQdYsYc4dIwuBXrP5Z68feTOFI_npodO7BxFD6yT3_gnSGfa39Y6gdgztboVtogpvpXGINMkjjHwQaktBO8_DNWuKafJaq00kR_NoYKkz_76_WTa24FI1_LvgxlpVW7b7k0OlLYCs3J6M_MStt74mAerjad4hgdJN0fo-ZH99X6LAvfoZAUAmzTnTuDy4STPpRbgtmHZAZda3iBQ9dHRK2k6nELiNd-UNGnzF0WqhSjVxpYvMmnS_A"/>
+</div>
+<div class="flex flex-col gap-4 px-4 md:px-0">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Coronary Artery Bypass</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                            A New Rhythm for Everyday Life
+                        </h2>
+<div class="flex items-center gap-2 text-secondary font-medium mt-2">
+<span class="border-b border-secondary pb-0.5">View Story</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-2 transition-transform duration-300">east</span>
+</div>
+</div>
+</article>
+<!-- Story Card 3 -->
+<article class="col-span-1 md:col-span-5 group cursor-pointer fade-up mt-12 md:mt-24">
+<div class="mask-organic-3 overflow-hidden relative h-[400px] md:h-[450px] bg-surface-container-low mb-8">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A macro, artistic shot focusing on a patient's hands resting calmly on a crisp white hospital bed sheet, with a blurred, sunlit window in the background. The image should evoke a sense of peace, healing, and premium editorial quality, similar to a high-end journal. Lighting is soft, bright, and airy. Colors are muted with subtle hints of secondary blues." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwBF8N9WbusUloUHDuOL9XnQbdfYuWErGK6-7AWrB_ygyQpCOlCWlZCdCjkm0YYPhsG39xI-Aj0KrQ6FQLs-R2wn62lzntw0gxYS-p8Ktj3qU-zgZt1l_krugAI2w2Y0z1Hu54sbUqK4M7-ZDP0bdIwBf6iQV963jTaz_wZtpfvQ87Oyd5fk2s8u5q3U1UeRFU5n7ZepTxlxPsZwXJ98mom3IZUV8sDarDFCNuiDu_d5ZGxQVB6RA_ow"/>
+</div>
+<div class="flex flex-col gap-4 px-4 md:px-0">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Aortic Aneurysm Treatment</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">
+                            Navigating Complexity with Precision
+                        </h2>
+<div class="flex items-center gap-2 text-secondary font-medium mt-2">
+<span class="border-b border-secondary pb-0.5">View Story</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-2 transition-transform duration-300">east</span>
+</div>
+</div>
+</article>
+<!-- Story Card 4 -->
+<article class="col-span-1 md:col-span-7 group cursor-pointer fade-up mt-12 md:mt-0">
+<div class="mask-organic-4 overflow-hidden relative h-[400px] md:h-[650px] bg-surface-container-low mb-8">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A wide, cinematic shot of a patient engaging in light physical therapy outdoors in a beautifully landscaped, private clinic garden. The tone is optimistic and recovery-focused, emphasizing a return to vitality. The style is modern corporate mixed with luxury concierge service, featuring clean lines, lush greenery, and bright, clear daylight." loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSHi5rBeP0yzhMARDxeEuA5r9sralP6YMUxmUJj4MPYcEFhjyty_2CGOH9QglQI2mtlpcgjP-fgXwCF_aq49jt82hhY5MoBMiyDOiZH4coYshsNS-ELjHgOKWUPwCdnrEEA9FNesvfpNBRXdyqrxWyjfTdWR4mDFNjKORwYYLV1xBaDcpB-uuS8kIMwRHBY55ecC7IKMQ0OtLMWlMgOmx5m4RBNSEpJKWeAIuL_J9jDq93bpY1Cj7oNw"/>
+</div>
+<div class="flex flex-col gap-4 px-4 md:px-0">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Minimally Invasive Surgery</span>
+<h2 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors duration-300">
+                            Accelerated Healing Pathways
+                        </h2>
+<div class="flex items-center gap-2 text-secondary font-medium mt-2">
+<span class="border-b border-secondary pb-0.5">View Story</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-2 transition-transform duration-300">east</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-surface-container-low py-section-padding px-8 text-center fade-up" id="consultation">
+<div class="max-w-3xl mx-auto flex flex-col items-center gap-8">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-headline-md md:text-headline-md text-on-surface">
+                    Begin Your Own Journey to Recovery
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Schedule a private consultation to discuss your specific cardiac care needs with Dr. Shah.
+                </p>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary rounded-full font-label-caps text-label-caps hover:bg-secondary hover:shadow-lg transition-all duration-300 group mt-4" href="#">
+                    Book a Consultation
+                    <span class="material-symbols-outlined ml-3 text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-none bg-surface-container-low border-t border-outline-variant transition-all duration-200 ease-in-out">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-grid-gutter px-8 py-section-padding max-w-container-max-width mx-auto">
+<div class="col-span-1 md:col-span-4 flex flex-col gap-6">
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary">
+                    Dr. Syed Anees ur Rehman Shah
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    Premium cardiac care focused on precision, compassion, and sophisticated recovery pathways.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-8 flex flex-col md:flex-row justify-end gap-12 md:gap-24 mt-12 md:mt-0">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface">Navigation</span>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-secondary underline transition-all" href="#">Expertise</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-secondary underline transition-all" href="#">Procedures</a>
+<a class="text-primary font-body-md text-body-md hover:text-secondary underline transition-all" href="#">Patient Stories</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-secondary underline transition-all" href="#">Media Center</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-label-caps text-on-surface">Legal</span>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-secondary underline transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-secondary underline transition-all" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="col-span-1 md:col-span-12 mt-16 pt-8 border-t border-outline-variant/30 flex flex-col gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">
+                    © 2024 Dr. Syed Anees ur Rehman Shah. All rights reserved. Medical Disclaimer: The information provided is for educational purposes and not a substitute for professional medical advice.
+                </p>
+</div>
+</div>
+</footer>
+<!-- Intersection Observer for Scroll Animations -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach((el) => {
+                observer.observe(el);
+            });
+            
+            // Subtle nav styling on scroll
+            const nav = document.getElementById('main-nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('shadow-sm', 'bg-surface/95');
+                    nav.classList.remove('bg-surface/80');
+                } else {
+                    nav.classList.remove('shadow-sm', 'bg-surface/95');
+                    nav.classList.add('bg-surface/80');
+                }
+            });
+        });
+    </script>
+</body></html>
